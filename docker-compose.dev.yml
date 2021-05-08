@@ -10,15 +10,15 @@ services:
             - /app/node_modules
         environment:
             - NODE_ENV=development
-            - MONGO_USER=ale
-            - MONGO_PWD=ale
+            - MONGO_USER=mango
+            - MONGO_PWD=mango
             - SESSION_SECRET=secret
             - DEBUG=node-app:*
         command: npm run dev
     mongodb:
         environment:
-            - MONGO_INITDB_ROOT_USERNAME=ale
-            - MONGO_INITDB_ROOT_PASSWORD=ale
+            - MONGO_INITDB_ROOT_USERNAME=mango
+            - MONGO_INITDB_ROOT_PASSWORD=mango
     nginx:
         ports:
             - "3000:80"
